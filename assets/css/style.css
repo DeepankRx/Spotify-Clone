@@ -1,24 +1,23 @@
-html,
-body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
 }
 
 * {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+    letter-spacing: 1px;
 }
 
 body {
     background-color: #181818;
     font-size: 14px;
     min-width: 720px;
-    letter-spacing: 1px;
 }
 
 #nowPlayingBarContainer {
-    width: 100%;
+	width: 100%;
     background-color: #282828;
     bottom: 0;
     position: fixed;
@@ -26,7 +25,7 @@ body {
 }
 
 #nowPlayingBar {
-    display: flex;
+	display: flex;
     height: 90px;
     padding: 16px;
     box-sizing: border-box;
@@ -34,17 +33,17 @@ body {
 
 #nowPlayingLeft,
 #nowPlayingRight {
-    width: 30%;
+	width: 30%;
     min-width: 180px;
 }
 
 #nowPlayingRight {
-    position: relative;
+	position: relative;
     margin-top: 16px;
 }
 
 #nowPlayingCenter {
-    width: 40%;
+	width: 40%;
     max-width: 700px;
     display: flex;
     flex-direction: column;
@@ -52,74 +51,74 @@ body {
 }
 
 #nowPlayingBar .content {
-    width: 100%;
-    height: 57px;
+	width: 100%;
+	height: 57px;
 }
 
 .playerControls .buttons {
-    margin: 0 auto;
+	margin: 0 auto;
     display: table;
 }
 
 .controlButton {
-    background-color: transparent;
+	background-color: transparent;
     border: none;
     vertical-align: middle;
 }
 
 .controlButton img {
-    width: 20px;
+	width: 20px;
     height: 20px;
 }
 
 .controlButton.play img,
 .controlButton.pause img {
-    width: 32px;
-    height: 32px;
+	width: 32px;
+	height: 32px;
 }
 
 .controlButton:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .progressTime {
-    color: #a0a0a0;
+	color: #a0a0a0;
     font-size: 11px;
     min-width: 40px;
     text-align: center;
 }
 
 .playbackBar {
-    display: flex;
+	display: flex;
 }
 
 .progressBar {
-    width: 100%;
+	width: 100%;
     height: 12px;
     display: inline-flex;
     cursor: pointer;
 }
 
 .progressBarBg {
-    background-color: #404040;
+	background-color: #404040;
     height: 4px;
     width: 100%;
     border-radius: 2px;
 }
 
 .progress {
-    background-color: #a0a0a0;
+	background-color: #a0a0a0;
     height: 4px;
     width: 0;
     border-radius: 2px;
 }
 
 .playbackBar .progressBar {
-    margin-top: 3px;
+	margin-top: 3px;
 }
 
 #nowPlayingLeft .albumArtwork {
-    height: 100%;
+	height: 100%;
     max-width: 57px;
     margin-right: 15px;
     float: left;
@@ -127,37 +126,37 @@ body {
 }
 
 #nowPlayingLeft .trackInfo {
-    display: table;
+	display: table;
 }
 
 #nowPlayingLeft .trackInfo .trackName {
-    margin: 6px 0;
+	margin: 6px 0;
     display: inline-block;
     width: 100%;
 }
 
 #nowPlayingLeft .trackInfo .artistName span {
-    font-size: 12px;
+	font-size: 12px;
     color: #a0a0a0;
 }
 
 .volumeBar {
-    width: 180px;
+	width: 180px;
     position: absolute;
     right: 0;
 }
 
 .volumeBar .progressBar {
-    width: 125px;
+	width: 125px;
 }
 
 #topContainer {
-    min-height: 100%;
-    width: 100%;
+	min-height: 100%;
+	width: 100%;
 }
 
 #navBarContainer {
-    background-color: #000;
+	background-color: #000;
     width: 220px;
     height: 100vh;
     position: fixed;
@@ -213,7 +212,7 @@ body {
 #mainViewContainer {
     margin-left: 220px;
     padding-bottom: 90px;
-    width: calc(100% -220px);
+    width: calc(100% - 220px);
 }
 
 #mainContent {
@@ -228,7 +227,7 @@ body {
 .gridViewItem {
     display: inline-block;
     margin-right: 20px;
-    width: 29px;
+    width: 29%;
     max-width: 200px;
     min-width: 150px;
     margin-bottom: 20px;
@@ -251,42 +250,121 @@ body {
     text-decoration: none;
 }
 
-.entityInfo
-{
-     padding:40px 0 10px 0;
-     display: inline-block;
-     width:100%;
+.entityInfo {
+    padding: 40px 0 10px 0;
+    display: inline-block;
+    width: 100%;
 }
 
-.entityInfo .leftSection
-{
-
-    width:30%;
-    float:left;
-    max-width:250px;
+.entityInfo .leftSection {
+    width: 30%;
+    float: left;
+    max-width: 250px;
 }
 
-.entityInfo .leftSection img
-{
-    width:100%;
+.entityInfo .leftSection img {
+    width: 100%;
 }
 
-.entityInfo .rightSection
-{
-
-    width:70%;
-    float:left;
-    padding:5px 10px 5px 40px; 
+.entityInfo .rightSection {
+    width: 70%;
+    float: left;
+    padding: 5px 10px 5px 40px;
     box-sizing: border-box;
 }
 
-.entityInfo .rightSection h2
-{
-    margin-top:0px;
+.entityInfo .rightSection h2 {
+    margin-top: 0px;
 }
 
-.entityInfo .rightSection span
-{
-    color:#939393;
+.entityInfo .rightSection p {
+    color: #939393;
     font-weight: 200;
 }
+
+.tracklist {
+    padding: 0;
+}
+
+.tracklistRow {
+    height: 40px;
+    padding: 15px 10px;
+    list-style: none;
+}
+
+.tracklistRow span {
+    color: #939393;
+    font-weight: 200;
+}
+
+.tracklistRow:hover {
+    background-color: #282828;
+}
+
+.tracklistRow .trackCount {
+    width: 8%;
+    float: left;
+}
+
+.tracklistRow .trackCount img {
+    width: 20px;
+    visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+}
+
+.tracklistRow:hover .trackCount img {
+    visibility: visible;
+}
+
+.tracklistRow .trackCount span {
+    visibility: visible;
+}
+
+.tracklistRow:hover .trackCount span {
+    visibility: hidden;
+}
+
+.tracklistRow .trackInfo {
+    width: 75%;
+    float: left;
+}
+
+.tracklistRow .trackInfo span {
+    display: block;
+}
+
+.tracklistRow .trackOptions {
+    width: 5%;
+    float: left;
+    text-align: right;
+}
+
+.tracklistRow .trackOptions img {
+    width: 15px;
+    visibility: hidden;
+}
+
+.tracklistRow:hover .trackOptions img {
+    visibility: visible;
+}
+
+.tracklistRow .trackDuration {
+    width: 12%;
+    float: left;
+    text-align: right;
+}
+
+.tracklistRow .trackInfo .trackName {
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+
+
+
+
+
+
+
+
